@@ -45,7 +45,7 @@ def unique_countries_list():
     # unique_countries = sorted(list(set(np.append(df['From'].unique(), df['To'].unique()))))
     # unique_countries = np.delete(unique_countries, np.where(unique_countries == "Azərbaycan"), axis=0)
     return ['Türkiyə', "Gürcüstan", "İran", "Rusiya",
-            "Qazaxıstan", "Türkmənistan", "Qırğızıstan", "Çin", ]
+            "Qazaxıstan", "Türkmənistan", "Qırğızıstan", "Çin", "Özbəkistan"]
 
 
 # @st.cache()
