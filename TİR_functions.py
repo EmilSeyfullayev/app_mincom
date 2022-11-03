@@ -122,8 +122,8 @@ def unique_countries_list():
 
 @st.cache()
 def return_final_table(selected_country, df):
-    max_month = 10 # df[df['Year'] == max(df['Year'].unique())]['Ay_sirasi'].max()
-    max_year = 2022#df['Year'].max()
+    max_month = df[df['Year'] == max(df['Year'].unique())]['Ay_sirasi'].max()
+    max_year = df['Year'].max()
     before_max_year = max_year - 1
     max_year_with_asterix = "2022*"
     before_max_year_with_asterix = "2021*"
